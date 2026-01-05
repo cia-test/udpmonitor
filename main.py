@@ -23,7 +23,7 @@ class UDPMonitor:
         udp_host: str = '0.0.0.0',
         udp_port: int = 8888,
         api_host: str = '0.0.0.0',
-        api_port: int = 5000,
+        api_port: int = 8880,
         db_path: str = 'udpmonitor.db',
         retention_days: float = 1.0
     ):
@@ -172,8 +172,8 @@ def main():
     parser.add_argument(
         '--api-port',
         type=int,
-        default=5000,
-        help='Port for REST API (default: 5000)'
+        default=8880,
+        help='Port for REST API (default: 8880)'
     )
     parser.add_argument(
         '--db-path',

@@ -18,7 +18,7 @@ COPY main.py /app/
 RUN mkdir -p /app/data
 
 # Expose ports
-EXPOSE 5000 8888/udp
+EXPOSE 8880 8888/udp
 
 # Set environment variables
 ENV PYTHONPATH=/app
